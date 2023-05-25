@@ -23,7 +23,7 @@ public class ExamenesBackendApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		User user= new User();
+	/*	User user= new User();
 
 		user.setName("Jhon");
 		user.setLastName("Ortiz");
@@ -43,6 +43,6 @@ public class ExamenesBackendApplication implements CommandLineRunner {
 		userrole.setUser(user);
 		userRoles.add(userrole);
 
-		User userSaved = userService.saveUser(user, userRoles );
+		User userSaved = userService.saveUser(user, userRoles );*/
 	}
 }

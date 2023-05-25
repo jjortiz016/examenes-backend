@@ -7,5 +7,9 @@ import java.util.Set;
 
 public interface IUserService {
     public User saveUser(User user, Set<UserRole> userRoles) throws Exception;
+    public User findUser(String userName);
+
+    public void deleteUser(Long userId);
+
 
 }

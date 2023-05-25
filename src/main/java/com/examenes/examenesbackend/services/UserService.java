@@ -32,4 +32,16 @@ public class UserService  implements IUserService{
         }
         return userLocal;
     }
+
+    @Override
+    public User findUser(String userName) {
+        return repositoryUser.findByUsername(userName);
+    }
+
+    @Override
+    public void deleteUser(Long userId) {
+            repositoryUser.deleteById(userId);
+    }
+
+
 }

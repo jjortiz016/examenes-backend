@@ -1,5 +1,8 @@
 package com.examenes.examenesbackend.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -22,6 +25,7 @@ public class User {
     private boolean enabled=true;
     private String profile;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "user")
+    @JsonIgnore
     private Set<UserRole> userRoles = new HashSet<>();
 
     public User() {
